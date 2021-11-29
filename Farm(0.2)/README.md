@@ -171,6 +171,20 @@ delay(600);
 
 lcd.clear();
 
+tc = dht.readTemperature();
+
+lcd.print('\n');
+
+lcd.print("Temperature- ");
+
+lcd.print(tc);
+
+lcd.print("°C");
+
+delay(600);
+
+lcd.clear();
+
 digitalWrite(13, HIGH); // sets the digital pin 13 on
   
   delay(9600);            // waits for a second
